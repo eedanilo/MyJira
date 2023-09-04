@@ -1,0 +1,60 @@
+package MyJira;
+import java.util.Arrays;
+import java.util.Objects;
+
+public class Task {
+	private String name;
+	private int time;
+	private boolean status;
+
+	public Task(String nome, int time) {
+		this.name = nome;
+		this.time = time;
+		this.status = false;
+	}
+
+	public String getNome() {
+		return this.name;
+	}
+
+	public void setTime(int t) {
+
+	}
+
+	public int getTime() {
+
+	}
+
+	public void setType(String t) {
+
+	}
+
+	public String getType() {
+
+	}
+
+	public boolean getStatus() {
+
+	}
+
+	public void finish() {
+
+	}
+
+	public String listTaks() {
+
+	}
+
+	public boolean equals(Object o) {
+
+	}
+
+	public String toString() {
+		String tasks;
+		String tasks = 
+	}
+
+	public int hashcode() {
+
+	}
+}
