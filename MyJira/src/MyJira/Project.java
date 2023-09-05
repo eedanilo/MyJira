@@ -11,13 +11,11 @@ public class Project {
 		Project p = new Project();
 		Dev danis = new Dev("Danis", "tudo");
 		System.out.println(danis.getName());
-		Task task = new Task("testar", 1);
-		backlog[0] = task;
+		
 	}
 	
 	
 	public Project() {
-		this.name = 
 	}
 	
 	public void registerTask(String nome, int time) {

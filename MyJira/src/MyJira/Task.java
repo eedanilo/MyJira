@@ -4,12 +4,12 @@ import java.util.Objects;
 
 public class Task {
 	private String name;
-	private int time;
+	private int tempoEx;
 	private boolean status;
 
-	public Task(String nome, int time) {
+	public Task(String nome, int tempo) {
 		this.name = nome;
-		this.time = time;
+		this.tempoEx = tempo;
 		this.status = false;
 	}
 
@@ -17,16 +17,16 @@ public class Task {
 		return this.name;
 	}
 
-	public void setTime(int t) {
-
+	public void setTime(int tempo) {
+		this.tempoEx = tempo;
 	}
 
 	public int getTime() {
-
+		return this.tempoEx;
 	}
 
 	public void setType(String t) {
-
+		
 	}
 
 	public String getType() {
@@ -34,27 +34,28 @@ public class Task {
 	}
 
 	public boolean getStatus() {
-
+		return this.status;
 	}
 
 	public void finish() {
-
+		this.status = true;
 	}
 
 	public String listTaks() {
-
+		
 	}
 
-	public boolean equals(Object o) {
-
-	}
-
+	
 	public String toString() {
 		String tasks;
 		String tasks = 
 	}
 
-	public int hashcode() {
-
+	@Override
+	public int hashCode() {
+		return Objects.hash(name, status, tempoEx);
 	}
+
+
+	
 }
