@@ -36,26 +36,45 @@ public class Task {
 	public boolean getStatus() {
 		return this.status;
 	}
+	
+	public void setStatus(boolean status) {
+		this.status = status;
+	}
 
 	public void finish() {
 		this.status = true;
 	}
 
-	public String listTaks() {
+	/**
+	 * public String listTaks() {
+	 */
 		
-	}
+	//}
 
 	
 	public String toString() {
-		String tasks;
-		String tasks = 
+		return "Tarefa: " + this.name + "Tempo: " + this.tempoEx + "Estado: " + (status ? "Finalizada" : "Em aberto"); 
 	}
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(name, status, tempoEx);
+		return name.hashCode();
 	}
 
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) {
+			return true;
+		}
+		if (o == null) {
+			return false;
+		}
+		if (getClass() != o.getClass()) {
+			return false;
+		}
+		Task task = (Task) o;
+		return name.equals(task.name);
+	}
 
 	
 }

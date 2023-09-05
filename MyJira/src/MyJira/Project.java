@@ -5,13 +5,14 @@ import java.util.Objects;
 public class Project {
 	private String name;
 	private Task[] backlog;
-	public Dev[] team;
+	private Dev[] team;
 	
 	public static void main(String[] args) {
 		Project p = new Project();
 		Dev danis = new Dev("Danis", "tudo");
 		System.out.println(danis.getName());
-		
+		Task[] backlog = new Task[];
+		Dev[] team = new Dev[];
 	}
 	
 	

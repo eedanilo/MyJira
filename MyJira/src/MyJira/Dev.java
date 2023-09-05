@@ -5,12 +5,11 @@ import java.util.Objects;
 public class Dev {
 	private String name;
 	private String team;
-	private Task[] myTasks;
+	private Task[] myTasks = new Task[5];
 
 	public Dev(String name, String team) {
 		this.name = name;
 		this.team = team;
-		this.myTasks = new Task[5];
 	}
 	
 	
